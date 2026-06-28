@@ -1,0 +1,134 @@
+schema: '2.0'
+stages:
+  ingestion:
+    cmd: python src/data/ingestion.py
+    deps:
+    - path: src/data/ingestion.py
+      hash: md5
+      md5: dc4b1a3c4cd7c739f105d6f3a5b9ca07
+      size: 3829
+    outs:
+    - path: data/AAPL_data.csv
+      hash: md5
+      md5: a59745345d56eadf2ff2a8e532a841a7
+      size: 239662
+  feature_engineering:
+    cmd: python src/data/feature_engineering.py
+    deps:
+    - path: data/AAPL_data.csv
+      hash: md5
+      md5: af84317260fb5a4ea0a065437dfcb5ae
+      size: 239655
+    - path: src/data/feature_engineering.py
+      hash: md5
+      md5: ed44e84d2630ec78b3fac71f1fb456eb
+      size: 5493
+    - path: src/data/ingestion.py
+      hash: md5
+      md5: dc4b1a3c4cd7c739f105d6f3a5b9ca07
+      size: 3829
+    outs:
+    - path: data/processed/AAPL_features.csv
+      hash: md5
+      md5: b7f88eb10db824d24cff89157ad41f76
+      size: 1088007
+  model_building:
+    cmd: python src/models/model_building.py
+    deps:
+    - path: data/processed/X_test.csv
+      hash: md5
+      md5: 7c74cf1dc6068ef828de9511bf8f6cde
+      size: 161946
+    - path: data/processed/X_train.csv
+      hash: md5
+      md5: bf0d3ff547a2c50d357c17d88ed33daf
+      size: 646324
+    - path: data/processed/y_test.csv
+      hash: md5
+      md5: 9a95af81c17bf2926c01c97cde22a587
+      size: 7981
+    - path: data/processed/y_train.csv
+      hash: md5
+      md5: 6b729fe26f0018e9f1fbf81917cb3aa6
+      size: 31869
+    - path: src/models/model_building.py
+      hash: md5
+      md5: e8ab1fe406935734fa30aac16c839d3e
+      size: 5948
+    params:
+      configs/params.yaml:
+        model_params:
+          n_estimators: 200
+          max_depth: 6
+          min_samples_leaf: 20
+          random_state: 42
+          n_jobs: -1
+        model_save_path: models_artifacts/random_forest.pkl
+        splits:
+          X_train: data/processed/X_train.csv
+          X_test: data/processed/X_test.csv
+          y_train: data/processed/y_train.csv
+          y_test: data/processed/y_test.csv
+    outs:
+    - path: models_artifacts/random_forest.pkl
+      hash: md5
+      md5: 898369594c2219538a7dd79aab7f42c0
+      size: 882555
+  preprocessing:
+    cmd: python src/data/preprocessing.py
+    deps:
+    - path: data/processed/AAPL_features.csv
+      hash: md5
+      md5: b7f88eb10db824d24cff89157ad41f76
+      size: 1088007
+    - path: src/data/preprocessing.py
+      hash: md5
+      md5: 4e4e6108215da48282764b54aa732162
+      size: 4589
+    params:
+      configs/params.yaml:
+        data_path: data/processed/AAPL_features.csv
+        features:
+        - Return_1D
+        - Log_Return
+        - Momentum_5
+        - Momentum_10
+        - Close_vs_MA5
+        - Close_vs_MA20
+        - Vol_5
+        - Vol_20
+        - HL_Spread
+        - OC_Spread
+        - Volume_Change
+        - Volume_vs_MA20
+        - RSI_14
+        - MACD
+        - MACD_Hist
+        - BB_pctB
+        - DayOfWeek
+        - Month
+        - Quarter
+        label: Target
+        splits:
+          X_train: data/processed/X_train.csv
+          X_test: data/processed/X_test.csv
+          y_train: data/processed/y_train.csv
+          y_test: data/processed/y_test.csv
+        test_size: 0.2
+    outs:
+    - path: data/processed/X_test.csv
+      hash: md5
+      md5: 7c74cf1dc6068ef828de9511bf8f6cde
+      size: 161946
+    - path: data/processed/X_train.csv
+      hash: md5
+      md5: bf0d3ff547a2c50d357c17d88ed33daf
+      size: 646324
+    - path: data/processed/y_test.csv
+      hash: md5
+      md5: 9a95af81c17bf2926c01c97cde22a587
+      size: 7981
+    - path: data/processed/y_train.csv
+      hash: md5
+      md5: 6b729fe26f0018e9f1fbf81917cb3aa6
+      size: 31869

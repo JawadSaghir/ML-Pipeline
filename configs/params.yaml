@@ -1,0 +1,47 @@
+# Configuration for the model-building stage.
+# data_path is produced by src/data/feature_engineering.py
+data_path: data/processed/AAPL_features.csv
+
+# Chronological hold-out fraction (most recent rows go to the test set).
+test_size: 0.2
+
+# Engineered, stationary features only — raw OHLCV price levels are intentionally
+# excluded because they are non-stationary (see feature_engineering.py).
+features:
+  - Return_1D
+  - Log_Return
+  - Momentum_5
+  - Momentum_10
+  - Close_vs_MA5
+  - Close_vs_MA20
+  - Vol_5
+  - Vol_20
+  - HL_Spread
+  - OC_Spread
+  - Volume_Change
+  - Volume_vs_MA20
+  - RSI_14
+  - MACD
+  - MACD_Hist
+  - BB_pctB
+  - DayOfWeek
+  - Month
+  - Quarter
+
+label: Target
+
+# Split files produced by src/data/preprocessing.py and consumed by model_building.
+splits:
+  X_train: data/processed/X_train.csv
+  X_test: data/processed/X_test.csv
+  y_train: data/processed/y_train.csv
+  y_test: data/processed/y_test.csv
+
+model_params:
+  n_estimators: 200
+  max_depth: 6
+  min_samples_leaf: 20
+  random_state: 42
+  n_jobs: -1
+
+model_save_path: models_artifacts/random_forest.pkl

@@ -9,7 +9,6 @@ wheels/
 # Virtual environments
 .venv
 /data ## tells git not to look after. DVC will handle it
-/data
 /docs
 /data_bucket
 /docs
