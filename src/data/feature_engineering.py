@@ -70,7 +70,9 @@ def feature_engineering(params_path: str = "configs/params.yaml") -> pd.DataFram
         pd.DataFrame: DataFrame with engineered features.
     """
     params = load_params(params_path)
-    df = load_data(params["ingestion"]["raw_data_path"])
+    ingestion_params = params.get("ingestion", {})
+    raw_data_path = ingestion_params.get("raw_data_path", "data/AAPL_data.csv")
+    df = load_data(raw_data_path)
 
     try:
         HORIZON = 5

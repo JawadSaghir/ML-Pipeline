@@ -73,9 +73,12 @@ def load_data(file_path: str) -> pd.DataFrame:
     :return: Loaded DataFrame with a parsed DatetimeIndex
     """
     try:
-        df = pd.read_csv(file_path, index_col=0, parse_dates=True)
+        df = pd.read_csv(file_path, index_col=0)
         if df.empty:
             raise ValueError(f"No rows found in {file_path}.")
+        df = df.drop(index=[marker for marker in ("Ticker", "Date") if marker in df.index], errors="ignore")
+        df.index = pd.to_datetime(df.index, errors="raise")
+        df.index.name = "Date"
         logger.debug('Data loaded from %s with shape %s', file_path, df.shape)
         return df
     except pd.errors.ParserError as e:
