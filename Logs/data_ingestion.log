@@ -1,0 +1,54 @@
+2026-06-28 11:00:38,638 - ingestion - INFO - Data downloaded successfully from Yahoo Finance for AAPL
+2026-06-28 11:00:38,683 - ingestion - INFO - Data saved successfully to data/AAPL_data.csv
+2026-06-28 11:00:38,701 - ingestion - INFO - Data loaded successfully from data/AAPL_data.csv
+[32m2026-06-28 11:04:34,598 - [ingestion] - INFO - Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m2026-06-28 11:04:34,628 - [ingestion] - INFO - Data saved successfully to data/AAPL_data.csv[0m
+[32m2026-06-28 11:04:34,646 - [ingestion] - INFO - Data loaded successfully from data/AAPL_data.csv[0m
+[32m[11:08:35] [INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[11:08:35] [INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[11:08:35] [INFO]: Data loaded successfully from data/AAPL_data.csv[0m
+[32m[2026-06-28 11:09:49] Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 11:09:50] Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 11:09:50] Data loaded successfully from data/AAPL_data.csv[0m
+[32m[2026-06-28 11:10:49] [(INFO)]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 11:10:49] [(INFO)]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 11:10:49] [(INFO)]: Data loaded successfully from data/AAPL_data.csv[0m
+[32m[2026-06-28 11:11:52] [(INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 11:11:52] [(INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 11:11:52] [(INFO]: Data loaded successfully from data/AAPL_data.csv[0m
+[32m[2026-06-28 11:12:35] [INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 11:12:35] [INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 11:12:35] [INFO]: Data loaded successfully from data/AAPL_data.csv[0m
+[32m[2026-06-28 11:14:23] [INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 11:14:23] [INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 11:14:23] [INFO]: Data loaded successfully from data/AAPL_data.csv[0m
+[32m[2026-06-28 12:19:21]-[INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 12:19:21]-[INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 12:19:21]-[INFO]: Data loaded successfully from data/AAPL_data.csv[0m
+2026-06-28 12:19:21,569 - feature_engineering - ERROR - Error during feature engineering: unsupported operand type(s) for /: 'str' and 'str'
+[32m[2026-06-28 12:22:39]-[INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 12:22:39]-[INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 12:22:39]-[INFO]: Data loaded successfully from data/AAPL_data.csv[0m
+[31m[2026-06-28 12:25:09]-[ERROR]: Error loading data from data/AAPL_data.csv: No usable price data found in data/AAPL_data.csv[0m
+2026-06-28 12:25:53,856 - feature_engineering - INFO - Feature engineering completed successfully.
+[32m[2026-06-28 12:27:22]-[INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 12:27:22]-[INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 12:27:22]-[INFO]: Data loaded successfully from Yahoo Finance for AAPL[0m
+2026-06-28 12:27:22,098 - feature_engineering - INFO - Feature engineering completed successfully.
+[32m[2026-06-28 12:28:33]-[INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 12:28:33]-[INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 12:28:33]-[INFO]: Data loaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 12:28:33]-[INFO]: Feature engineering completed successfully.[0m
+[32m[2026-06-28 12:46:21]-[INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 12:46:21]-[INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 12:46:21]-[INFO]: Data loaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 12:46:21]-[INFO]: Feature engineering completed successfully.[0m
+[32m[2026-06-28 14:23:42]-[INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 14:23:42]-[INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 14:23:42]-[INFO]: Data loaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 14:23:46]-[INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 14:23:46]-[INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 14:23:46]-[INFO]: Data loaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 16:18:06]-[INFO]: Data downloaded successfully from Yahoo Finance for AAPL[0m
+[32m[2026-06-28 16:18:06]-[INFO]: Data saved successfully to data/AAPL_data.csv[0m
+[32m[2026-06-28 16:18:06]-[INFO]: Data loaded successfully from Yahoo Finance for AAPL[0m

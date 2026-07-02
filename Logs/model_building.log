@@ -1,0 +1,108 @@
+[32m[2026-06-28 13:47:52]-[INFO]: Starting model-building stage.[0m
+[36m[2026-06-28 13:47:52]-[DEBUG]: Parameters retrieved from params.yaml[0m
+[36m[2026-06-28 13:47:52]-[DEBUG]: Data loaded from data/processed/AAPL_features.csv with shape (2489, 25)[0m
+[32m[2026-06-28 13:47:52]-[INFO]: Chronological split: 1991 train rows (up to 2023-12-28), 498 test rows (from 2023-12-29)[0m
+[36m[2026-06-28 13:47:52]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-06-28 13:47:53]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-06-28 13:47:53]-[INFO]: Evaluation -> accuracy=0.5261 precision=0.5474 recall=0.8370 f1=0.6619[0m
+[32m[2026-06-28 13:47:53]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-06-28 13:47:53]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-06-28 13:49:42]-[INFO]: Starting model-building stage.[0m
+[36m[2026-06-28 13:49:42]-[DEBUG]: Parameters retrieved from params.yaml[0m
+[36m[2026-06-28 13:49:42]-[DEBUG]: Data loaded from data/processed/AAPL_features.csv with shape (2489, 25)[0m
+[32m[2026-06-28 13:49:42]-[INFO]: Chronological split: 1991 train rows (up to 2023-12-28), 498 test rows (from 2023-12-29)[0m
+[36m[2026-06-28 13:49:42]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-06-28 13:49:42]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-06-28 13:49:43]-[INFO]: Evaluation -> accuracy=0.5261 precision=0.5474 recall=0.8370 f1=0.6619[0m
+[32m[2026-06-28 13:49:43]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-06-28 13:49:43]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-06-28 13:54:57]-[INFO]: Starting model-building stage.[0m
+[36m[2026-06-28 13:54:57]-[DEBUG]: Parameters retrieved from D:\machine_learning_course\ml_project\configs\params.yaml[0m
+[36m[2026-06-28 13:54:57]-[DEBUG]: Data loaded from data/processed/AAPL_features.csv with shape (2489, 25)[0m
+[32m[2026-06-28 13:54:57]-[INFO]: Chronological split: 1991 train rows (up to 2023-12-28), 498 test rows (from 2023-12-29)[0m
+[36m[2026-06-28 13:54:57]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-06-28 13:54:57]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-06-28 13:54:57]-[INFO]: Evaluation -> accuracy=0.5261 precision=0.5474 recall=0.8370 f1=0.6619[0m
+[32m[2026-06-28 13:54:57]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-06-28 13:54:57]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-06-28 13:55:07]-[INFO]: Starting model-building stage.[0m
+[36m[2026-06-28 13:55:07]-[DEBUG]: Parameters retrieved from D:\machine_learning_course\ml_project\configs\params.yaml[0m
+[36m[2026-06-28 13:55:07]-[DEBUG]: Data loaded from data/processed/AAPL_features.csv with shape (2489, 25)[0m
+[32m[2026-06-28 13:55:07]-[INFO]: Chronological split: 1991 train rows (up to 2023-12-28), 498 test rows (from 2023-12-29)[0m
+[36m[2026-06-28 13:55:07]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-06-28 13:55:08]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-06-28 13:55:08]-[INFO]: Evaluation -> accuracy=0.5261 precision=0.5474 recall=0.8370 f1=0.6619[0m
+[32m[2026-06-28 13:55:08]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-06-28 13:55:08]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-06-28 14:23:50]-[INFO]: Starting model-building stage.[0m
+[36m[2026-06-28 14:23:50]-[DEBUG]: Parameters retrieved from D:\machine_learning_course\ml_project\configs\params.yaml[0m
+[36m[2026-06-28 14:23:50]-[DEBUG]: Data loaded from data/processed/AAPL_features.csv with shape (2489, 25)[0m
+[32m[2026-06-28 14:23:50]-[INFO]: Chronological split: 1991 train rows (up to 2023-12-28), 498 test rows (from 2023-12-29)[0m
+[36m[2026-06-28 14:23:50]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-06-28 14:23:50]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-06-28 14:23:50]-[INFO]: Evaluation -> accuracy=0.5261 precision=0.5474 recall=0.8370 f1=0.6619[0m
+[32m[2026-06-28 14:23:50]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-06-28 14:23:50]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-06-28 16:18:11]-[INFO]: Starting model-building stage.[0m
+[36m[2026-06-28 16:18:11]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[36m[2026-06-28 16:18:11]-[DEBUG]: Data loaded from data/processed/X_train.csv with shape (1991, 19)[0m
+[36m[2026-06-28 16:18:11]-[DEBUG]: Data loaded from data/processed/X_test.csv with shape (498, 19)[0m
+[36m[2026-06-28 16:18:11]-[DEBUG]: Data loaded from data/processed/y_train.csv with shape (1991, 1)[0m
+[36m[2026-06-28 16:18:11]-[DEBUG]: Data loaded from data/processed/y_test.csv with shape (498, 1)[0m
+[32m[2026-06-28 16:18:11]-[INFO]: Loaded splits: 1991 train rows, 498 test rows[0m
+[36m[2026-06-28 16:18:11]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-06-28 16:18:11]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-06-28 16:18:11]-[INFO]: Evaluation -> accuracy=0.5241 precision=0.5463 recall=0.8333 f1=0.6600[0m
+[32m[2026-06-28 16:18:11]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-06-28 16:18:11]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-06-28 16:28:56]-[INFO]: Starting model-building stage.[0m
+[36m[2026-06-28 16:28:56]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[36m[2026-06-28 16:28:56]-[DEBUG]: Data loaded from data/processed/X_train.csv with shape (1991, 19)[0m
+[36m[2026-06-28 16:28:56]-[DEBUG]: Data loaded from data/processed/X_test.csv with shape (498, 19)[0m
+[36m[2026-06-28 16:28:56]-[DEBUG]: Data loaded from data/processed/y_train.csv with shape (1991, 1)[0m
+[36m[2026-06-28 16:28:56]-[DEBUG]: Data loaded from data/processed/y_test.csv with shape (498, 1)[0m
+[32m[2026-06-28 16:28:56]-[INFO]: Loaded splits: 1991 train rows, 498 test rows[0m
+[36m[2026-06-28 16:28:56]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-06-28 16:28:56]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-06-28 16:28:56]-[INFO]: Evaluation -> accuracy=0.5261 precision=0.5474 recall=0.8370 f1=0.6619[0m
+[32m[2026-06-28 16:28:56]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-06-28 16:28:56]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-06-28 17:44:47]-[INFO]: Starting model-building stage.[0m
+[36m[2026-06-28 17:44:47]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[36m[2026-06-28 17:44:47]-[DEBUG]: Data loaded from data/processed/X_train.csv with shape (1991, 19)[0m
+[36m[2026-06-28 17:44:47]-[DEBUG]: Data loaded from data/processed/X_test.csv with shape (498, 19)[0m
+[36m[2026-06-28 17:44:47]-[DEBUG]: Data loaded from data/processed/y_train.csv with shape (1991, 1)[0m
+[36m[2026-06-28 17:44:47]-[DEBUG]: Data loaded from data/processed/y_test.csv with shape (498, 1)[0m
+[32m[2026-06-28 17:44:47]-[INFO]: Loaded splits: 1991 train rows, 498 test rows[0m
+[36m[2026-06-28 17:44:47]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-06-28 17:44:48]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-06-28 17:44:48]-[INFO]: Evaluation -> accuracy=0.5261 precision=0.5474 recall=0.8370 f1=0.6619[0m
+[32m[2026-06-28 17:44:48]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-06-28 17:44:48]-[INFO]: Model is successfully saved)[0m
+[32m[2026-06-28 17:44:48]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-06-28 17:45:02]-[INFO]: Starting model-building stage.[0m
+[36m[2026-06-28 17:45:02]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[36m[2026-06-28 17:45:02]-[DEBUG]: Data loaded from data/processed/X_train.csv with shape (1991, 19)[0m
+[36m[2026-06-28 17:45:02]-[DEBUG]: Data loaded from data/processed/X_test.csv with shape (498, 19)[0m
+[36m[2026-06-28 17:45:02]-[DEBUG]: Data loaded from data/processed/y_train.csv with shape (1991, 1)[0m
+[36m[2026-06-28 17:45:02]-[DEBUG]: Data loaded from data/processed/y_test.csv with shape (498, 1)[0m
+[32m[2026-06-28 17:45:02]-[INFO]: Loaded splits: 1991 train rows, 498 test rows[0m
+[36m[2026-06-28 17:45:02]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-06-28 17:45:02]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-06-28 17:45:02]-[INFO]: Evaluation -> accuracy=0.5261 precision=0.5474 recall=0.8370 f1=0.6619[0m
+[32m[2026-06-28 17:45:02]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-06-28 17:45:02]-[INFO]: Model is successfully saved[0m
+[32m[2026-06-28 17:45:02]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-06-28 20:17:51]-[INFO]: Starting model-building stage.[0m
+[36m[2026-06-28 20:17:51]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[36m[2026-06-28 20:17:51]-[DEBUG]: Data loaded from data/processed/X_train.csv with shape (1991, 19)[0m
+[36m[2026-06-28 20:17:51]-[DEBUG]: Data loaded from data/processed/X_test.csv with shape (498, 19)[0m
+[36m[2026-06-28 20:17:51]-[DEBUG]: Data loaded from data/processed/y_train.csv with shape (1991, 1)[0m
+[36m[2026-06-28 20:17:51]-[DEBUG]: Data loaded from data/processed/y_test.csv with shape (498, 1)[0m
+[32m[2026-06-28 20:17:51]-[INFO]: Loaded splits: 1991 train rows, 498 test rows[0m
+[36m[2026-06-28 20:17:51]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-06-28 20:17:52]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-06-28 20:17:52]-[INFO]: Evaluation -> accuracy=0.5261 precision=0.5474 recall=0.8370 f1=0.6619[0m
+[32m[2026-06-28 20:17:52]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-06-28 20:17:52]-[INFO]: Model is successfully saved[0m
+[32m[2026-06-28 20:17:52]-[INFO]: Model-building stage completed successfully.[0m

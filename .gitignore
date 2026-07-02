@@ -1,15 +1,28 @@
 # Python-generated files
 __pycache__/
-*.py[oc]
+*.py[cod]
+*.egg-info/
 build/
 dist/
 wheels/
-*.egg-info
 
-# Virtual environments
-.venv
-/data ## tells git not to look after. DVC will handle it
-/data
-/docs
-/data_bucket
-/docs
+# Virtual environment
+.venv/
+
+# Data (managed by DVC)
+data/
+data_bucket/
+
+# Documentation
+docs/
+
+# Claude files
+.claude/
+.claude-flow/
+CLAUDE.md
+
+# DVC local storage / cache
+S3/
+
+# Logs
+Logs/

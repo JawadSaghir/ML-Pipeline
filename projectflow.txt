@@ -1,0 +1,12 @@
+Building Pipeline: 
+
+- Craete a Github account and cline it in local
+- Add src folder along with all components (run them individually).
+- Add data, models, reports directories to .gitignore file
+- Now it add, commit, push
+
+Settig up dev pipeline 
+  Create dvc.yml file and stages to it.
+  dvc init then do dvc repro to test the pipline automation (check dvc dag)
+  Now git add, commit, push 
+  

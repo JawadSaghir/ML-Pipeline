@@ -1,0 +1,5 @@
+[36m[2026-06-28 16:28:46]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[32m[2026-06-28 16:28:49]-[INFO]: Downloaded 2514 rows for AAPL from Yahoo Finance[0m
+[32m[2026-06-28 16:28:49]-[INFO]: Raw data saved to data/AAPL_data.csv[0m
+[32m[2026-06-28 16:28:49]-[INFO]: Ingestion stage completed successfully.[0m
+[32m[2026-06-28 16:28:51]-[INFO]: Data loaded from data/AAPL_data.csv with shape (2514, 5)[0m
