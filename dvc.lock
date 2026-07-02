@@ -5,61 +5,61 @@ stages:
     deps:
     - path: src/data/ingestion.py
       hash: md5
-      md5: dc4b1a3c4cd7c739f105d6f3a5b9ca07
-      size: 3829
+      md5: e0e0304578c6984e3ae3d79032526903
+      size: 5395
     outs:
     - path: data/AAPL_data.csv
       hash: md5
-      md5: a59745345d56eadf2ff2a8e532a841a7
-      size: 239662
+      md5: 080e5530501d3eb20106fd1c03a5501e
+      size: 239591
   feature_engineering:
     cmd: python src/data/feature_engineering.py
     deps:
     - path: data/AAPL_data.csv
       hash: md5
-      md5: af84317260fb5a4ea0a065437dfcb5ae
-      size: 239655
+      md5: 080e5530501d3eb20106fd1c03a5501e
+      size: 239591
     - path: src/data/feature_engineering.py
       hash: md5
-      md5: ed44e84d2630ec78b3fac71f1fb456eb
-      size: 5493
+      md5: cebb93d1a9f45f7ab18fc85c88122451
+      size: 6289
     - path: src/data/ingestion.py
       hash: md5
-      md5: dc4b1a3c4cd7c739f105d6f3a5b9ca07
-      size: 3829
+      md5: e0e0304578c6984e3ae3d79032526903
+      size: 5395
     outs:
     - path: data/processed/AAPL_features.csv
       hash: md5
-      md5: b7f88eb10db824d24cff89157ad41f76
-      size: 1088007
+      md5: 41eb806c158235916b411b42c6a6ffd1
+      size: 1086703
   model_building:
     cmd: python src/models/model_building.py
     deps:
     - path: data/processed/X_test.csv
       hash: md5
-      md5: 7c74cf1dc6068ef828de9511bf8f6cde
-      size: 161946
+      md5: bc974d9ada19e4bde7f43d751af26e54
+      size: 161987
     - path: data/processed/X_train.csv
       hash: md5
-      md5: bf0d3ff547a2c50d357c17d88ed33daf
-      size: 646324
+      md5: 70ce05be9ecf5cae5605835c1b7d6a32
+      size: 646334
     - path: data/processed/y_test.csv
       hash: md5
-      md5: 9a95af81c17bf2926c01c97cde22a587
-      size: 7981
+      md5: 58e6fd2dd907dbb0a93d6a8cfc34a825
+      size: 6985
     - path: data/processed/y_train.csv
       hash: md5
-      md5: 6b729fe26f0018e9f1fbf81917cb3aa6
-      size: 31869
+      md5: 1d239ee0a93fdad02102834274c3730b
+      size: 27887
     - path: src/models/model_building.py
       hash: md5
-      md5: e8ab1fe406935734fa30aac16c839d3e
-      size: 5948
+      md5: 3c3bf87633dcc5175b981f4338398241
+      size: 8080
     params:
       configs/params.yaml:
         model_params:
-          n_estimators: 200
-          max_depth: 6
+          n_estimators: 260
+          max_depth: 9
           min_samples_leaf: 20
           random_state: 42
           n_jobs: -1
@@ -72,19 +72,19 @@ stages:
     outs:
     - path: models_artifacts/random_forest.pkl
       hash: md5
-      md5: 898369594c2219538a7dd79aab7f42c0
-      size: 882555
+      md5: ada1368878e0cb2e88a9b90fe2c9f927
+      size: 1807740
   preprocessing:
     cmd: python src/data/preprocessing.py
     deps:
     - path: data/processed/AAPL_features.csv
       hash: md5
-      md5: b7f88eb10db824d24cff89157ad41f76
-      size: 1088007
+      md5: 41eb806c158235916b411b42c6a6ffd1
+      size: 1086703
     - path: src/data/preprocessing.py
       hash: md5
-      md5: 4e4e6108215da48282764b54aa732162
-      size: 4589
+      md5: 96f35ac981bca931246965892647d46f
+      size: 4625
     params:
       configs/params.yaml:
         data_path: data/processed/AAPL_features.csv
@@ -118,17 +118,17 @@ stages:
     outs:
     - path: data/processed/X_test.csv
       hash: md5
-      md5: 7c74cf1dc6068ef828de9511bf8f6cde
-      size: 161946
+      md5: bc974d9ada19e4bde7f43d751af26e54
+      size: 161987
     - path: data/processed/X_train.csv
       hash: md5
-      md5: bf0d3ff547a2c50d357c17d88ed33daf
-      size: 646324
+      md5: 70ce05be9ecf5cae5605835c1b7d6a32
+      size: 646334
     - path: data/processed/y_test.csv
       hash: md5
-      md5: 9a95af81c17bf2926c01c97cde22a587
-      size: 7981
+      md5: 58e6fd2dd907dbb0a93d6a8cfc34a825
+      size: 6985
     - path: data/processed/y_train.csv
       hash: md5
-      md5: 6b729fe26f0018e9f1fbf81917cb3aa6
-      size: 31869
+      md5: 1d239ee0a93fdad02102834274c3730b
+      size: 27887
