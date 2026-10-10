@@ -10,15 +10,15 @@ stages:
     outs:
     - path: data/AAPL_data.csv
       hash: md5
-      md5: 080e5530501d3eb20106fd1c03a5501e
-      size: 239591
+      md5: 15e20e7aff50032d2f34de1240fba174
+      size: 239623
   feature_engineering:
     cmd: python src/data/feature_engineering.py
     deps:
     - path: data/AAPL_data.csv
       hash: md5
-      md5: 080e5530501d3eb20106fd1c03a5501e
-      size: 239591
+      md5: 15e20e7aff50032d2f34de1240fba174
+      size: 239623
     - path: src/data/feature_engineering.py
       hash: md5
       md5: cebb93d1a9f45f7ab18fc85c88122451
@@ -30,19 +30,19 @@ stages:
     outs:
     - path: data/processed/AAPL_features.csv
       hash: md5
-      md5: 41eb806c158235916b411b42c6a6ffd1
-      size: 1086703
+      md5: 5375bf92a4aaaffeb9dfedb8e346e41d
+      size: 1086862
   model_building:
     cmd: python src/models/model_building.py
     deps:
     - path: data/processed/X_test.csv
       hash: md5
-      md5: bc974d9ada19e4bde7f43d751af26e54
-      size: 161987
+      md5: fdcd853140e47612c35283f007eac7ad
+      size: 162027
     - path: data/processed/X_train.csv
       hash: md5
-      md5: 70ce05be9ecf5cae5605835c1b7d6a32
-      size: 646334
+      md5: 1ae3080c7f960695a701d5a72a1b5f01
+      size: 646395
     - path: data/processed/y_test.csv
       hash: md5
       md5: 58e6fd2dd907dbb0a93d6a8cfc34a825
@@ -53,13 +53,13 @@ stages:
       size: 27887
     - path: src/models/model_building.py
       hash: md5
-      md5: 3c3bf87633dcc5175b981f4338398241
-      size: 8080
+      md5: 389630613b91bbe447f03a2f4cbc5522
+      size: 6180
     params:
       configs/params.yaml:
         model_params:
-          n_estimators: 260
-          max_depth: 9
+          n_estimators: 200
+          max_depth: 6
           min_samples_leaf: 20
           random_state: 42
           n_jobs: -1
@@ -72,15 +72,15 @@ stages:
     outs:
     - path: models_artifacts/random_forest.pkl
       hash: md5
-      md5: ada1368878e0cb2e88a9b90fe2c9f927
-      size: 1807740
+      md5: aa9f01f13ae2de2f396c24e3f1f1990a
+      size: 882555
   preprocessing:
     cmd: python src/data/preprocessing.py
     deps:
     - path: data/processed/AAPL_features.csv
       hash: md5
-      md5: 41eb806c158235916b411b42c6a6ffd1
-      size: 1086703
+      md5: 5375bf92a4aaaffeb9dfedb8e346e41d
+      size: 1086862
     - path: src/data/preprocessing.py
       hash: md5
       md5: 96f35ac981bca931246965892647d46f
@@ -118,12 +118,12 @@ stages:
     outs:
     - path: data/processed/X_test.csv
       hash: md5
-      md5: bc974d9ada19e4bde7f43d751af26e54
-      size: 161987
+      md5: fdcd853140e47612c35283f007eac7ad
+      size: 162027
     - path: data/processed/X_train.csv
       hash: md5
-      md5: 70ce05be9ecf5cae5605835c1b7d6a32
-      size: 646334
+      md5: 1ae3080c7f960695a701d5a72a1b5f01
+      size: 646395
     - path: data/processed/y_test.csv
       hash: md5
       md5: 58e6fd2dd907dbb0a93d6a8cfc34a825
