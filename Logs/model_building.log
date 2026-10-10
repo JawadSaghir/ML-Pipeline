@@ -106,3 +106,42 @@
 [32m[2026-06-28 20:17:52]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
 [32m[2026-06-28 20:17:52]-[INFO]: Model is successfully saved[0m
 [32m[2026-06-28 20:17:52]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-10-10 22:49:09]-[INFO]: Starting model-building stage.[0m
+[36m[2026-10-10 22:49:09]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[36m[2026-10-10 22:49:09]-[DEBUG]: Data loaded from data/processed/X_train.csv with shape (1991, 19)[0m
+[36m[2026-10-10 22:49:09]-[DEBUG]: Data loaded from data/processed/X_test.csv with shape (498, 19)[0m
+[36m[2026-10-10 22:49:09]-[DEBUG]: Data loaded from data/processed/y_train.csv with shape (1991, 1)[0m
+[36m[2026-10-10 22:49:09]-[DEBUG]: Data loaded from data/processed/y_test.csv with shape (498, 1)[0m
+[32m[2026-10-10 22:49:09]-[INFO]: Loaded splits: 1991 train rows, 498 test rows[0m
+[36m[2026-10-10 22:49:09]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-10-10 22:49:10]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-10-10 22:49:10]-[INFO]: Evaluation -> accuracy=0.5261 precision=0.5474 recall=0.8370 f1=0.6619[0m
+[32m[2026-10-10 22:49:10]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-10-10 22:49:10]-[INFO]: Model is successfully saved[0m
+[32m[2026-10-10 22:49:10]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-10-10 22:49:36]-[INFO]: Starting model-building stage.[0m
+[36m[2026-10-10 22:49:36]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[36m[2026-10-10 22:49:36]-[DEBUG]: Data loaded from data/processed/X_train.csv with shape (1991, 19)[0m
+[36m[2026-10-10 22:49:36]-[DEBUG]: Data loaded from data/processed/X_test.csv with shape (498, 19)[0m
+[36m[2026-10-10 22:49:36]-[DEBUG]: Data loaded from data/processed/y_train.csv with shape (1991, 1)[0m
+[36m[2026-10-10 22:49:36]-[DEBUG]: Data loaded from data/processed/y_test.csv with shape (498, 1)[0m
+[32m[2026-10-10 22:49:36]-[INFO]: Loaded splits: 1991 train rows, 498 test rows[0m
+[36m[2026-10-10 22:49:36]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-10-10 22:49:37]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-10-10 22:49:37]-[INFO]: Evaluation -> accuracy=0.5241 precision=0.5463 recall=0.8333 f1=0.6600[0m
+[32m[2026-10-10 22:49:37]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-10-10 22:49:37]-[INFO]: Model is successfully saved[0m
+[32m[2026-10-10 22:49:37]-[INFO]: Model-building stage completed successfully.[0m
+[32m[2026-10-10 22:49:48]-[INFO]: Starting model-building stage.[0m
+[36m[2026-10-10 22:49:48]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[36m[2026-10-10 22:49:48]-[DEBUG]: Data loaded from data/processed/X_train.csv with shape (1991, 19)[0m
+[36m[2026-10-10 22:49:48]-[DEBUG]: Data loaded from data/processed/X_test.csv with shape (498, 19)[0m
+[36m[2026-10-10 22:49:48]-[DEBUG]: Data loaded from data/processed/y_train.csv with shape (1991, 1)[0m
+[36m[2026-10-10 22:49:48]-[DEBUG]: Data loaded from data/processed/y_test.csv with shape (498, 1)[0m
+[32m[2026-10-10 22:49:48]-[INFO]: Loaded splits: 1991 train rows, 498 test rows[0m
+[36m[2026-10-10 22:49:48]-[DEBUG]: Training on 1991 rows and 19 features[0m
+[32m[2026-10-10 22:49:49]-[INFO]: Model trained successfully with parameters: {'n_estimators': 200, 'max_depth': 6, 'min_samples_leaf': 20, 'random_state': 42, 'n_jobs': -1}[0m
+[32m[2026-10-10 22:49:49]-[INFO]: Evaluation -> accuracy=0.5241 precision=0.5463 recall=0.8333 f1=0.6600[0m
+[32m[2026-10-10 22:49:49]-[INFO]: Model saved successfully at models_artifacts/random_forest.pkl[0m
+[32m[2026-10-10 22:49:49]-[INFO]: Model is successfully saved[0m
+[32m[2026-10-10 22:49:49]-[INFO]: Model-building stage completed successfully.[0m

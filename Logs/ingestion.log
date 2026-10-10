@@ -3,3 +3,27 @@
 [32m[2026-06-28 16:28:49]-[INFO]: Raw data saved to data/AAPL_data.csv[0m
 [32m[2026-06-28 16:28:49]-[INFO]: Ingestion stage completed successfully.[0m
 [32m[2026-06-28 16:28:51]-[INFO]: Data loaded from data/AAPL_data.csv with shape (2514, 5)[0m
+[36m[2026-10-10 22:19:23]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[31m[2026-10-10 22:19:23]-[ERROR]: Ingestion stage failed: yfinance is required to download data, but it is not installed.[0m
+[36m[2026-10-10 22:41:49]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[31m[2026-10-10 22:41:49]-[ERROR]: Ingestion stage failed: yfinance is required to download data, but it is not installed.[0m
+[36m[2026-10-10 22:42:27]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[32m[2026-10-10 22:42:33]-[INFO]: Downloaded 2514 rows for AAPL from Yahoo Finance[0m
+[32m[2026-10-10 22:42:33]-[INFO]: Raw data saved to data/AAPL_data.csv[0m
+[32m[2026-10-10 22:42:33]-[INFO]: Ingestion stage completed successfully.[0m
+[36m[2026-10-10 22:42:33]-[DEBUG]: Data loaded from data/AAPL_data.csv with shape (2514, 5)[0m
+[36m[2026-10-10 22:42:35]-[DEBUG]: Data loaded from data/AAPL_data.csv with shape (2514, 5)[0m
+[36m[2026-10-10 22:42:37]-[DEBUG]: Data loaded from data/processed/AAPL_features.csv with shape (2489, 25)[0m
+[36m[2026-10-10 22:49:24]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[32m[2026-10-10 22:49:26]-[INFO]: Downloaded 2514 rows for AAPL from Yahoo Finance[0m
+[32m[2026-10-10 22:49:26]-[INFO]: Raw data saved to data/AAPL_data.csv[0m
+[32m[2026-10-10 22:49:26]-[INFO]: Ingestion stage completed successfully.[0m
+[36m[2026-10-10 22:49:26]-[DEBUG]: Data loaded from data/AAPL_data.csv with shape (2514, 5)[0m
+[36m[2026-10-10 22:49:28]-[DEBUG]: Data loaded from data/AAPL_data.csv with shape (2514, 5)[0m
+[36m[2026-10-10 22:49:30]-[DEBUG]: Data loaded from data/processed/AAPL_features.csv with shape (2489, 25)[0m
+[36m[2026-10-10 22:49:40]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[32m[2026-10-10 22:49:40]-[INFO]: Raw data already exists at data/AAPL_data.csv[0m
+[36m[2026-10-10 22:49:40]-[DEBUG]: Data loaded from data/AAPL_data.csv with shape (2514, 5)[0m
+[32m[2026-10-10 22:49:40]-[INFO]: Ingestion stage completed successfully.[0m
+[36m[2026-10-10 22:49:42]-[DEBUG]: Data loaded from data/AAPL_data.csv with shape (2514, 5)[0m
+[36m[2026-10-10 22:49:43]-[DEBUG]: Data loaded from data/processed/AAPL_features.csv with shape (2489, 25)[0m

@@ -8,3 +8,12 @@
 [36m[2026-06-28 16:28:51]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
 [32m[2026-06-28 16:28:51]-[INFO]: Processed features saved to data/processed/AAPL_features.csv with shape (2489, 25)[0m
 [32m[2026-06-28 16:28:51]-[INFO]: Feature engineering completed successfully.[0m
+[36m[2026-10-10 22:42:35]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[32m[2026-10-10 22:42:35]-[INFO]: Processed features saved to data/processed/AAPL_features.csv with shape (2489, 25)[0m
+[32m[2026-10-10 22:42:35]-[INFO]: Feature engineering completed successfully.[0m
+[36m[2026-10-10 22:49:28]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[32m[2026-10-10 22:49:28]-[INFO]: Processed features saved to data/processed/AAPL_features.csv with shape (2489, 25)[0m
+[32m[2026-10-10 22:49:28]-[INFO]: Feature engineering completed successfully.[0m
+[36m[2026-10-10 22:49:42]-[DEBUG]: Parameters retrieved from configs/params.yaml[0m
+[32m[2026-10-10 22:49:42]-[INFO]: Processed features saved to data/processed/AAPL_features.csv with shape (2489, 25)[0m
+[32m[2026-10-10 22:49:42]-[INFO]: Feature engineering completed successfully.[0m
