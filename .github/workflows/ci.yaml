@@ -1,4 +1,4 @@
-name: CI WOrkflow
+name: CI
 
 on:
   push:
@@ -7,21 +7,25 @@ on:
   pull_request:
     branches:
       - main
-  
+
 jobs:
- test:
-  name: build
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Run tests
-      run: |
-        pytest
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # uv installs the Python version pinned in .python-version and the exact,
+      # cross-platform dependency set recorded in uv.lock.
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      # Runs unit tests plus an end-to-end pipeline run on synthetic data,
+      # so CI never depends on Yahoo Finance being reachable.
+      - name: Run tests
+        run: uv run pytest test -v
